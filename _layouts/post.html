@@ -17,11 +17,32 @@ layout: default
     </header>
 
     <div class="post-content e-content" itemprop="articleBody">
-        <div>{{ page.summary }}</div>
+        {{ content }}
         <br />
         <div>{{ page.player }}</div>
         <br />
-        {{ content }}
+        <h1>Show Notes</h1>
+
+        {%- if page.git_trendy -%}
+        <h4>Git Trendy:</h4>
+        {%- if page.git_trendy.clinton -%}
+        <p>Clinton's Pick: <a href="{{ page.git_trendy.clinton }}">{{ page.git_trendy.clinton }}</a></p>
+        {%- endif -%}
+        {%- if page.git_trendy.austin -%}
+        <p>Austin's Pick: <a href="{{ page.git_trendy.austin }}">{{ page.git_trendy.austin }}</a></p>
+        {%- endif -%}
+        {%- endif -%}
+
+        <h4>Resources:</h4>
+        {% if page.resources %}
+        <ul>
+            {% for resource in page.resources %}
+            <li>
+                <a href="{{ resource }}">{{ resource }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
     </div>
 
     {%- if site.disqus.shortname -%}

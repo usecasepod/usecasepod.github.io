@@ -21,11 +21,10 @@ layout: default
                     {{ post.title | escape }}
                 </a>
             </h3>
-            {%- if post.summary -%}
+            {%- if site.show_excerpts -%}
             <div>
-                {{ post.summary }}
+                {{ post.excerpt }}
             </div>
-            <br />
             {%- endif -%}
             {%- if post.show_player -%}
             {{ post.player }}
