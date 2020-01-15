@@ -5,7 +5,7 @@ categories: episode
 author: Austin Webre & Clinton Walker
 show_player: true
 player: <iframe src="https://anchor.fm/use-case/embed/episodes/2---The-State-of-Quantum-Computing-e6cnh2" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-get_trendy:
+git_trendy:
     austin: https://github.com/tootsuite/mastodon
     clinton: https://github.com/mattermost/mattermost-server
 resources:
