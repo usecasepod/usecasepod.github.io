@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Use Case is a developer podcast by [Austin Webre](https://twitter.com/austinwebre) and [Clinton Walker](https://twitter.com/clintonjwalker)!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You can find links to your favorite podcatcher on [our Anchor page](https://anchor.fm/use-case).
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+# Looking to get in touch?
+Contact us at [usecasepod@gmail.com](mailto:usecasepod@gmail.com) or [@usecasepod](https://twitter.com/usecasepod) on Twitter.
