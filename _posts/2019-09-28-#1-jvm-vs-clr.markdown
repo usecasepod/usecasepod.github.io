@@ -1,25 +1,21 @@
 ---
 layout: post
 title:  "Ep #1: JVM vs CLR"
-date:   2019-09-28 12:55:08 -0600
 categories: episode
+author: Austin Webre & Clinton Walker
+summary: On the inagural episode of Use Case, Clinton and Austin compare and contrast JVM and CLR. The discussion broadens to include all of the Java and .NET ecosystems as well as the approaches taken by the companies who support them. 
 show_player: true
 player: <iframe src="https://anchor.fm/use-case/embed/episodes/1---JVM-vs-CLR-e59l8h" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 ---
-
-On the inagural episode of Use Case, Clinton and Austin compare and contrast JVM and CLR. The discussion broadens to include all of the Java and .NET ecosystems as well as the approaches taken by the companies who support them. 
-
-<iframe src="https://anchor.fm/use-case/embed/episodes/1---JVM-vs-CLR-e59l8h" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
-
 ## Show Notes
 
-# GIT TRENDING: 
+# GIT Trendy: 
 
 Clinton's Pick: <https://github.com/TheAlgorithms/Python>
 
 Austin's Pick: <https://github.com/EbookFoundation/free-programming-books>
 
-# EPISODE RESOURCES: 
+# Resources: 
 
 <https://en.wikipedia.org/wiki/Common_Language_Runtime>
 <https://docs.microsoft.com/en-us/dotnet/standard/clr>
