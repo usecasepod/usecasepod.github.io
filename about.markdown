@@ -3,7 +3,7 @@ layout: page
 title: About Us
 exclude: true
 ---
-We started this podcast as newcomers to an industry that requires a dedication to learning and adapting, and as friends who found that differing perspectives often yeild greater insight when combined. Our hope is that in developing this podcast, we can channel our desire to push ourselves into a show that might inspire others to do the same.
+We started this podcast as newcomers to an industry that requires a dedication to learning and adapting, and as friends who found that differing perspectives often yield greater insight when combined. Our hope is that in developing this podcast, we can channel our desire to push ourselves into a show that might inspire others to do the same.
 
 # Austin Webre
 <hr />
