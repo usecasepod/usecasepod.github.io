@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About Us
-exclude: true
 ---
 We started this podcast as newcomers to an industry that requires a dedication to learning and adapting, and as friends who found that differing perspectives often yield greater insight when combined. Our hope is that in developing this podcast, we can channel our desire to push ourselves into a show that might inspire others to do the same.
 
@@ -13,3 +12,10 @@ Austin is a Full Stack software developer in the Greater New Orleans area. He of
 
 LinkedIn: <https://www.linkedin.com/in/austinwebre/> <br/>
 Twitter: <https://www.twitter.com/austinwebre>
+
+# Clinton Walker
+<hr />
+Clinton is a career student who doesn't know how to stay away from a university for very long. His passion primarily lies in academics and pursuing a career there. His relationship with procrastination leads to frequently testing his abilities in crunching time. In his free time he likes to learn about new things coming through in computer science and add to his collective knowledge that he may or may not ever use. His biggest weakness is instant gratification that can distract him from real work.
+
+LinkedIn : <https://www.linkedin.com/in/clintonjwalker/>
+Twitter: <https://www.twitter.com/clintonjwalker>
