@@ -4,6 +4,7 @@ title: "Ep #5: Agile and Scrum"
 categories: episode
 author: Austin Webre & Clinton Walker
 show_player: false
+published: false
 player: null
 git_trendy:
     austin: https://github.com/microsoft/terminal
