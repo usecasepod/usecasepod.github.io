@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ep #4: The Failure of PHP"
-categories: episode
+categories: Episodes
 author: Austin Webre & Clinton Walker
 show_player: true
 player: <iframe src="https://anchor.fm/use-case/embed/episodes/4---The-Failure-of-PHP-e9rh24" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

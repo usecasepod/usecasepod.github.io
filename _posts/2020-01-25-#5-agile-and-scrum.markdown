@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ep #5: Agile and Scrum"
-categories: episode
+categories: Episodes
 author: Austin Webre & Clinton Walker
 show_player: false
 player: null

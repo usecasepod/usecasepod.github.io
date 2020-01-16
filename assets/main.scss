@@ -4,3 +4,54 @@
 $brand-color: #ACA6A6;
 
 @import "minima";
+
+.post-select{
+    position: relative;
+    display: inline-block;
+    ul.post-select-items{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        margin: 0;
+        z-index: 1;
+        list-style-type: none;
+        li {
+            margin: 5px;
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .post-select-header{
+        margin-bottom: 0;
+        &::after {
+            content: "";
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-bottom: 3px;
+            margin-left: 10px;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+        cursor: pointer;
+    }
+
+    &:hover {
+        ul.post-select-items {
+            display: block;
+        }
+
+        .post-select-header {
+            &::after {
+                margin-bottom:5px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+        }
+    }
+}

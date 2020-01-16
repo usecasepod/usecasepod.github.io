@@ -10,12 +10,33 @@ layout: default
     {{ content }}
 
     {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Episodes" }}</h2>
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Episodes" }}</h2> -->
+    <div class="post-select">
+        <h2 class="post-select-header">{{ page.list_title | default: "Everything" }}</h2>
+        <ul class="post-select-items">
+            {%- for category in site.categories -%}
+            {%- unless category[0] == page.list_title -%}
+            <li><a
+                    href="{{site.url}}{{site.baseurl}}/{{ category[0] | downcase | downcase | url_escape | strip | replace: ' ', '-' }}.html">{{category[0]}}</a>
+            </li>
+            {%- endunless -%}
+            {%- endfor -%}
+            {%- if page.list_title -%}
+            <li>
+                <a href="{{site.url}}{{site.baseurl}}">Everything</a>
+            </li>
+            {%- endif -%}
+        </ul>
+    </div>
     <ul class="post-list">
-        {%- for post in site.posts -%}
+        {%- assign posts = site.posts -%}
+        {%- if page.list_title -%}
+        {%- assign posts = site.posts | where: "categories", page.list_title -%}
+        {%- endif -%}
+        {%- for post in posts -%}
         <li>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <span class="post-meta">{{ post.date | date: date_format }} | {{post.categories}}</span>
             <h3>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ep #1: JVM vs CLR"
-categories: episode
+categories: Episodes
 author: Austin Webre & Clinton Walker
 show_player: true
 player: <iframe src="https://anchor.fm/use-case/embed/episodes/1---JVM-vs-CLR-e59l8h" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>

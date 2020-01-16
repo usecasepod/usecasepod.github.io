@@ -22,9 +22,9 @@ comments: true
         <br />
         <div>{{ page.player }}</div>
         <br />
+        {%- if page.git_trendy -%}
         <h1>Show Notes</h1>
 
-        {%- if page.git_trendy -%}
         <h4>Git Trendy:</h4>
         {%- if page.git_trendy.clinton -%}
         <p>Clinton's Pick: <a href="{{ page.git_trendy.clinton }}">{{ page.git_trendy.clinton }}</a></p>
@@ -34,8 +34,8 @@ comments: true
         {%- endif -%}
         {%- endif -%}
 
-        <h4>Resources:</h4>
         {% if page.resources %}
+        <h4>Resources:</h4>
         <ul>
             {% for resource in page.resources %}
             <li>
@@ -45,7 +45,6 @@ comments: true
         </ul>
         {% endif %}
         {%- unless page.hide_comments -%}
-        <br />
         {%- include disqus.html -%}
         {%- endunless -%}
     </div>
