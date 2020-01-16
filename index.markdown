@@ -4,6 +4,7 @@
 
 layout: home
 title: Welcome to Use Case!
+exclude: true
 ---
 Use Case is a podcast about Software Development by [Austin Webre](https://twitter.com/austinwebre) and [Clinton Walker](https://twitter.com/clintonjwalker). New episodes drop on the last Saturday of each month.
 
