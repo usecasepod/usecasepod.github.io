@@ -20,13 +20,16 @@
 
 title: Use Case Podcast
 email: usecasepod@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to the home of Use Case Podcast!
+description: Developers making a podcast about development!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: true
 twitter_username: usecasepod
-github_username:  usecasepod
+github_username: usecasepod
+disqus:
+  enabled: true
+  id: https-usecasepod-github-io
+
 
 # Build settings
 theme: minima
