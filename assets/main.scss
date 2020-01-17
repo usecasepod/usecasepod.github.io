@@ -41,7 +41,7 @@ $brand-color: #ACA6A6;
         cursor: pointer;
     }
 
-    &:hover {
+    &:hover, &.active {
         ul.post-select-items {
             display: block;
         }

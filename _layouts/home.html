@@ -11,8 +11,8 @@ layout: default
 
     {%- if site.posts.size > 0 -%}
     <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Episodes" }}</h2> -->
-    <div class="post-select">
-        <h2 class="post-select-header">{{ page.list_title | default: "Everything" }}</h2>
+    <div id="post-select" class="post-select">
+        <h2 id="post-filter" class="post-select-header">{{ page.list_title | default: "Everything" }}</h2>
         <ul class="post-select-items">
             {%- for category in site.categories -%}
             {%- unless category[0] == page.list_title -%}
@@ -58,3 +58,15 @@ layout: default
     {%- endif -%}
 
 </div>
+
+<script>
+    var filterElement = document.getElementById('post-filter');
+    filterElement.addEventListener("click", function () {
+        var e = document.getElementById('post-select');
+        if (e.classList.contains("active")) {
+            e.classList.remove("active");
+        } else {
+            e.classList.add("active");
+        }
+    });
+</script>
