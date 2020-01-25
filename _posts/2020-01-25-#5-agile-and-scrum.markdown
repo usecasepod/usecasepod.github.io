@@ -3,8 +3,8 @@ layout: post
 title: "Ep #5: Agile and Scrum"
 categories: Episodes
 author: Austin Webre & Clinton Walker
-show_player: false
-player: null
+show_player: true
+player: <iframe src="https://anchor.fm/use-case/embed/episodes/5---Agile-and-Scrum-eadi3h" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 git_trendy:
     austin: https://github.com/microsoft/terminal
     clinton: https://github.com/dotnet-presentations/blazor-workshop
