@@ -5,6 +5,20 @@ $brand-color: #ACA6A6;
 
 @import "minima";
 
+.site-title {
+    float: unset;
+}
+.title-links {
+    margin-top: -15px;
+    margin-bottom: 5px;
+    & > a {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
 .post-select{
     position: relative;
     display: inline-block;

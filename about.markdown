@@ -17,7 +17,7 @@ Twitter: <https://www.twitter.com/austinwebre>
 <hr />
 Clinton is a career student who doesn't know how to stay away from a university for very long. His passion primarily lies in academics and pursuing a career there. His relationship with procrastination leads to frequently testing his abilities in crunching time. In his free time he likes to learn about new things coming through in computer science and add to his collective knowledge that he may or may not ever use. His biggest weakness is instant gratification that can distract him from real work.
 
-![Clinton Walker](/assets/2DF8B9BA-2B84-4797-92C7-4004769E3736.jpeg)
+<img alt="Clinton Walker" src="/assets/2DF8B9BA-2B84-4797-92C7-4004769E3736.jpeg" width="200" />
 
 LinkedIn : <https://www.linkedin.com/in/clintonjwalker/> <br/>
 Twitter: <https://www.twitter.com/clintonjwalker>
