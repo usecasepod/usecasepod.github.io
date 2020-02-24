@@ -6,7 +6,7 @@ We started this podcast as newcomers to an industry that requires a dedication t
 
 # Austin Webre
 <hr />
-Austin is a Full Stack software developer in the Greater New Orleans area. He often finds himself working on numerous side projects, none of which ever seem to see the light of day (but he's working on that). AFK, Austin enjoys other creative endeavours (like this podcast or his music - which also never sees the light of day) and spending time with his wife, family, and friends (preferably outdoors, close to the water... or the mountains).
+Austin is a Full Stack software developer in the Greater New Orleans area. He often finds himself working on numerous side projects, none of which ever seem to see the light of day (but he's working on that). AFK, Austin enjoys other creative endeavours (like this podcast or his music - which also never sees the light of day) and spending time with his wife, family, and friends (preferably outdoors, close to the water... or the mountains... or both).
 
 ![Austin Webre](/assets/austin.jpeg)
 
