@@ -31,10 +31,33 @@ disqus:
   enabled: true
   id: https-usecasepod-github-io
 podcatchers:
-  - url: https://podcasts.apple.com/us/podcast/use-case/id1481366213?uo=4
+  - name: Apple Podcasts
+    url: https://podcasts.apple.com/us/podcast/use-case/id1481366213?uo=4
     img: apple_podcasts@2x.png
-  - url: https://open.spotify.com/show/2bePoRcK7kDnO9nRRttVA7
+  - name: Spotify
+    url: https://open.spotify.com/show/2bePoRcK7kDnO9nRRttVA7
     img: spotify@2x.png
+  - name: Stitcher
+    url: https://www.stitcher.com/podcast/use-case
+    img: stitcher_dark@2x.png
+  - name: Overcast
+    url: https://overcast.fm/itunes1481366213/use-case
+    img: overcast@2x.png
+  - name: Google Podcasts
+    url: https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9jYjZkNzEwL3BvZGNhc3QvcnNz
+    img: google_podcasts@2x.png
+  - name: Pocket Casts
+    url: https://pca.st/qwgikqft
+    img: pocket_casts@2x.png
+  - name: Breaker
+    url: https://www.breaker.audio/use-case-1
+    img: breaker@2x.png
+  - name: Castbox
+    url: https://castbox.fm/channel/Use-Case-id2386856
+    img: castbox@2x.png
+  - name: RadioPublic
+    url: https://radiopublic.com/use-case-WdA3q7
+    img: radiopublic@2x.png
 
 # Build settings
 theme: minima

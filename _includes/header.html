@@ -32,7 +32,9 @@
         </div>
         <div class="title-links">
             {%- for podcatcher in site.podcatchers -%}
-            <a href="{{podcatcher.url}}"><img src="{{relative_url}}assets/podcatchers/{{podcatcher.img}}" /></a>
+            <a href="{{podcatcher.url}}" target="_blank">
+                <img src="/{{relative_url}}assets/podcatchers/{{podcatcher.img}}" />
+            </a>
             {%- endfor -%}
         </div>
     </div>
