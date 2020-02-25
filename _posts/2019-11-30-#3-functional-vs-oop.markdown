@@ -3,8 +3,11 @@ layout: post
 title: "Ep #3: Functional Programming"
 categories: Episodes
 author: Austin Webre & Clinton Walker
-show_player: true
-player: <iframe src="https://anchor.fm/use-case/embed/episodes/3---Functional-Programming-e8p54h" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+player_config: 
+    id: 3
+    audio_src: https://anchor.fm/s/cb6d710/podcast/play/8213073/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2019-10-20%2F-3---Functional-Programming-74f280396fa03.m4a
+    runtime: "44:23"
+    show_player: true
 git_trendy:
     austin: https://github.com/30-seconds/30-seconds-of-code
     clinton: https://github.com/bregman-arie/devops-interview-questions

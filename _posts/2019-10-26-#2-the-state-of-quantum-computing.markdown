@@ -3,8 +3,6 @@ layout: post
 title: "Ep #2: The State of Quantum Computing"
 categories: Episodes
 author: Austin Webre & Clinton Walker
-show_player: false
-player: <iframe src="https://anchor.fm/use-case/embed/episodes/2---The-State-of-Quantum-Computing-e6cnh2" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 player_config: 
     id: 2
     audio_src: https://anchor.fm/s/cb6d710/podcast/play/5708770/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-02-20%2Fee863b51a8f380714d27e129237da5e8.m4a
