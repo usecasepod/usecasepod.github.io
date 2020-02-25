@@ -160,7 +160,7 @@ I liked this, it definitely allowed for an easier experience when tapping the ic
 The result is something like this:
 ![Bottom Bar v2](/assets/BottomBar_v2.png)
 
-This does feel more anchored, and I sent it to Clinton, hoping once again that he would affirm that I had concqured this thing once and for all.
+This does feel more anchored, and I sent it to Clinton, hoping once again that he would affirm that I had conquered this thing once and for all.
 
 I was not.
 
@@ -238,5 +238,5 @@ Now I mentioned that this method does have some drawbacks of its own. I personal
 
 But there we are! I really enjoyed spending a little time thinking about mobile friendly design and applying this to our little podcast website.
 
-Am I abusing css? Are my mobile instincts totally wrong? Have suggestions for improvments? 
+Am I abusing css? Are my mobile instincts totally wrong? Have suggestions for improvements? 
 Tell me in the comments below, [send an email](mailto:usecasepod@gmail.com) to usecasepod@gmail.com, or [@ me on twitter](https://twitter.com/austinwebre).
