@@ -4,7 +4,7 @@ title:  "Ep #1: JVM vs CLR"
 categories: Episodes
 author: Austin Webre & Clinton Walker
 player_config: 
-    player_id: 1
+    id: 1
     audio_src: https://anchor.fm/s/cb6d710/podcast/play/4559569/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-02-19%2Fb115fd26ea7d808f73b03c331bf3aea4.m4a
     runtime: "39:43"
     show_player: true
