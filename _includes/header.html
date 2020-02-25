@@ -31,11 +31,47 @@
             {%- endif -%}
         </div>
         <div class="title-links">
-            {%- for podcatcher in site.podcatchers -%}
-            <a href="{{podcatcher.url}}" target="_blank">
-                <img src="/{{relative_url}}assets/podcatchers/{{podcatcher.img}}" />
-            </a>
-            {%- endfor -%}
+            <div class="title-link-group">
+                <a href="https://podcasts.apple.com/us/podcast/use-case/id1481366213?uo=4" target="_blank">
+                    <img src="/assets/podcatchers/apple_podcasts@2x.png">
+                </a>
+                <a href="https://open.spotify.com/show/2bePoRcK7kDnO9nRRttVA7" target="_blank">
+                    <img src="/assets/podcatchers/spotify@2x.png">
+                </a>
+                <a href="https://www.stitcher.com/podcast/use-case" target="_blank">
+                    <img src="/assets/podcatchers/stitcher_dark@2x.png">
+                </a>
+                <a href="https://overcast.fm/itunes1481366213/use-case" target="_blank">
+                    <img src="/assets/podcatchers/overcast@2x.png">
+                </a>
+                <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9jYjZkNzEwL3BvZGNhc3QvcnNz"
+                    target="_blank">
+                    <img src="/assets/podcatchers/google_podcasts@2x.png">
+                </a>
+            </div>
+            <div class="title-link-group">
+                <a href="https://pca.st/qwgikqft" target="_blank">
+                    <img src="/assets/podcatchers/pocket_casts@2x.png">
+                </a>
+                <a href="https://www.breaker.audio/use-case-1" target="_blank">
+                    <img src="/assets/podcatchers/breaker@2x.png">
+                </a>
+                <a href="https://castbox.fm/channel/Use-Case-id2386856" target="_blank">
+                    <img src="/assets/podcatchers/castbox@2x.png">
+                </a>
+                <a href="https://radiopublic.com/use-case-WdA3q7" target="_blank">
+                    <img src="/assets/podcatchers/radiopublic@2x.png">
+                </a>
+                <a href="https://anchor.fm/s/cb6d710/podcast/rss" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="rssfeed" viewBox="0 0 8 8" class="rssfeed">
+                        <title>RSS Feed</title>
+                        <rect class="button" width="8" height="8" rx="1.5"></rect>
+                        <circle class="symbol" cx="2" cy="6" r="1"></circle>
+                        <path class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"></path>
+                        <path class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </header>
