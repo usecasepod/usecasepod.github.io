@@ -51,6 +51,7 @@ comments: true
     </div>
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    {%- if page.player_config.show_player -%}
     <script>
         //TODO: consolidate this and the other player in home.html
         podlovePlayer('#player', {
@@ -58,7 +59,6 @@ comments: true
             poster: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2033092/2033092-1563131762814-1cd3d271f5ebe.jpg",
             show: {
                 title: "Use Case",
-                url: "usecasepod.github.io",
                 subtitle: "Developers making a podcast about development!",
                 poster: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2033092/2033092-1563131762814-1cd3d271f5ebe.jpg",
                 url: "https://usecasepod.github.io/"
@@ -82,4 +82,5 @@ comments: true
             ]
         });
     </script>
+    {%- endif -%}
 </article>
