@@ -48,13 +48,53 @@ layout: default
             </div>
             {%- endif -%}
             {%- if post.show_player -%}
-            {{ post.player }}
+            {{post.player}}
+            {%- endif -%}
+            {%- if post.player_config.show_player -%}
+            <div id="player-{{ post.player_config.id }}">
+
+            </div>
+            <script>
+                //TODO: consolidate this and the other player in posts.html
+                podlovePlayer('#player-{{ post.player_config.id }}', {
+                    title: "{{ post.title }}",
+                    poster: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2033092/2033092-1563131762814-1cd3d271f5ebe.jpg",
+                    link: "https://anchor.fm/use-case/episodes/1---JVM-vs-CLR-e59l8h",
+                    show: {
+                        title: "Use Case",
+                        url: "usecasepod.github.io",
+                        subtitle: "Developers making a podcast about development!",
+                        poster: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2033092/2033092-1563131762814-1cd3d271f5ebe.jpg",
+                        url: "https://usecasepod.github.io/"
+                    },
+                    duration: "{{ post.player_config.runtime }}",
+                    audio: [{
+                        url: "{{ post.player_config.audio_src }}",
+                        mimeType: 'audio/mp4'
+                    }],
+                    theme: {
+                        main: '#756C6C'
+                    },
+                    visibleComponents: [
+                        'showTitle',
+                        'episodeTitle',
+                        'progressbar',
+                        'controlSteppers',
+                        'poster',
+                        'tabAudio',
+                        'tabShare'
+                    ]
+                });
+            </script>
             {%- endif -%}
         </li>
         {%- endfor -%}
+        {%- for post in posts -%}
+
+        {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
     {%- endif -%}
 
 </div>

@@ -20,7 +20,8 @@ comments: true
     <div class="post-content e-content" itemprop="articleBody">
         {{ content }}
         <br />
-        <div>{{ page.player }}</div>
+        <div id="player"></div>
+        <div id="example"></div>
         <br />
         {%- if page.git_trendy -%}
         <h1>Show Notes</h1>
@@ -50,4 +51,36 @@ comments: true
     </div>
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    <script>
+        //TODO: consolidate this and the other player in home.html
+        podlovePlayer('#player', {
+            title: "{{ page.title }}",
+            poster: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2033092/2033092-1563131762814-1cd3d271f5ebe.jpg",
+            link: "https://anchor.fm/use-case/episodes/1---JVM-vs-CLR-e59l8h",
+            show: {
+                title: "Use Case",
+                url: "usecasepod.github.io",
+                subtitle: "Developers making a podcast about development!",
+                poster: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2033092/2033092-1563131762814-1cd3d271f5ebe.jpg",
+                url: "https://usecasepod.github.io/"
+            },
+            duration: "{{ page.player_config.runtime }}",
+            audio: [{
+                url: "{{ page.player_config.audio_src }}",
+                mimeType: 'audio/mp4'
+            }],
+            theme: {
+                main: '#756C6C'
+            },
+            visibleComponents: [
+                'showTitle',
+                'episodeTitle',
+                'progressbar',
+                'controlSteppers',
+                'poster',
+                'tabAudio',
+                'tabShare'
+            ]
+        });
+    </script>
 </article>
