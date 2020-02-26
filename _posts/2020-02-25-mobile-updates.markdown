@@ -162,7 +162,7 @@ The result is something like this:
 
 This does feel more anchored, and I sent it to Clinton, hoping once again that he would affirm that I had conquered this thing once and for all.
 
-I was not.
+I had not.
 
 We agreed that it felt more anchored, but we also agreed that it still felt a little unbalanced. He suggested a 4/5 distribution instead, which felt obvious to me as soon as he said it. Now, I won't bore you with the details, but I did have to restructure the template to make this work. Specifically, I had to remove the templating of the link items as grouping them within liquid would be too much of a pain. I'm hoping in the future to think of a good way to template this out, but for the time being I hardcoded the links and created two groups. 
 
