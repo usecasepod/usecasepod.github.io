@@ -3,8 +3,11 @@ layout: post
 title: "Ep #6: Containers!"
 categories: Episodes
 author: Austin Webre & Clinton Walker
-show_player: false
-player: null
+player_config: 
+    id: 6
+    audio_src: null
+    runtime: "52:03"
+    show_player: false
 git_trendy:
     austin: https://github.com/hashicorp/terraform
     clinton: https://github.com/gin-gonic/gin
