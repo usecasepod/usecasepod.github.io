@@ -5,9 +5,9 @@ categories: Episodes
 author: Austin Webre & Clinton Walker
 player_config: 
     id: 6
-    audio_src: null
+    audio_src: https://anchor.fm/s/cb6d710/podcast/play/10702288/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-02-29%2F6bea98ab466405447f2b056bb80ed786.m4a
     runtime: "52:03"
-    show_player: false
+    show_player: true
 git_trendy:
     austin: https://github.com/hashicorp/terraform
     clinton: https://github.com/gin-gonic/gin
