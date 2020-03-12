@@ -10,68 +10,107 @@ $brand-color: #aca6a6;
 .site-title {
   float: unset;
 }
-.title-links {
-  margin-top: -5px;
-  margin-bottom: 5px;
-  display: flex;
-  & > .title-link-group {
-    & > a {
-      width: 25px;
-      height: 25px;
-      display: inline-block;
-      margin-right: 5px;
-      .rssfeed {
-        width: 100%;
-        height: 100%;
-        margin-bottom: -8px;
-        .button {
-          stroke: none;
-          fill: $brand-color;
+.title-links-container {
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    display: none;
+    @include tablet {
+      color: white;
+      width: 33%;
+      text-align: center;
+      vertical-align: middle;
+      background-color: rgb(93, 87, 86);
+      display: block;
+      &::after {
+        content: "";
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin: 5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
+  }
+  input:checked ~ label {
+    &::after {
+      margin-bottom: 0;
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+  @include tablet {
+    input:checked ~ .title-links {
+      display: none;
+    }
+  }
+
+  .title-links {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: flex;
+    & > .title-link-group {
+      & > a {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin-right: 5px;
+        .rssfeed {
+          width: 100%;
+          height: 100%;
+          margin-bottom: -8px;
+          .button {
+            stroke: none;
+            fill: $brand-color;
+          }
+          .symbol {
+            stroke: x none;
+            fill: white;
+          }
         }
-        .symbol {
-          stroke: x none;
-          fill: white;
+      }
+    }
+    @include tablet {
+      text-align: center;
+      margin: unset;
+      flex-wrap: wrap;
+      background-color: rgba(117, 108, 108, 0.9);
+      & > .title-link-group {
+        display: flex;
+        &:first-child {
+          justify-content: flex-end;
+        }
+        &:last-child {
+          justify-content: flex-start;
+        }
+        @include mobile {
+          &:first-child,
+          &:last-child {
+            justify-content: center;
+          }
+        }
+        flex: 1;
+        & > a {
+          margin: 5px;
+          width: 40px;
+          height: 40px;
         }
       }
     }
   }
+
   @include tablet {
     position: fixed;
     bottom: 0;
     left: 0;
     margin: 0;
-    padding: 10px 0 10px 0;
-    text-align: center;
     width: 100%;
-    flex-wrap: wrap;
-    background-color: rgba(117, 108, 108, 0.9);
-    & > .title-link-group {
-      display: flex;
-      &:first-child {
-        justify-content: flex-end;
-      }
-      &:last-child {
-        justify-content: flex-start;
-      }
-      @include mobile {
-        &:first-child,
-        &:last-child {
-          justify-content: center;
-        }
-      }
-      flex: 1;
-      & > a {
-        margin: 5px;
-        width: 40px;
-        height: 40px;
-      }
+    footer {
+      margin-bottom: 100px;
     }
-  }
-}
-
-@include tablet {
-  footer {
-    margin-bottom: 100px;
   }
 }
 
