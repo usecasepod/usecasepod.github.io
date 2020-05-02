@@ -7,7 +7,7 @@ player_config:
   id: 8
   audio_src:
   runtime: "1:17:12"
-  show_player: true
+  show_player: false
 git_trendy:
   austin: https://github.com/microsoft/PowerToys
   clinton: https://github.com/pcottle/learnGitBranching
