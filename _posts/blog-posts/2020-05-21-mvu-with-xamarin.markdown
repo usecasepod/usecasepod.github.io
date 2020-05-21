@@ -247,4 +247,4 @@ There are plenty of things I don't like about F#. For one, I think that its easy
 
 That's what excites me about MAUI. If the result is MVU's ability to make code more "reasonable" with the familiarity of C#, I really think I could be sold on it. The beauty of all this is that there are no plans to get rid of XAML or MVVM, so I'll always have that to fall back on, but I think there is really something to be said for the simplicity of MVU. That being said, this is just me scratching the surface. In order to do a full scale app (like Commutr V2), I'll have to figure out how to leverage composition to create smaller, more manageable components that can be combined together.
 
-Til you next time! (If I ever get around to it...)
+Til next time! (If I ever get around to it...)
