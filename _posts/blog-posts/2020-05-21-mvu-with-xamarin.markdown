@@ -5,9 +5,9 @@ categories: Posts
 author: Austin Webre
 ---
 
-This week saw one of Microsoft's biggest conferences transition to a completely online format. We won't discuss the fact that this year's conference was **supposed** to be held just 30 minutes from my house and that I was hoping to attend, but I do want to talk a bit about some of this year's announcements in the .NET space that have taken over my brain. There's plenty to be excited about - new Azure services, production-ready (?) Blazor, .NET Core 4 - err... I mean .NET 5 - but what has really monopolized my thinking is how functional concepts keep making their way into C#.
+This week saw one of Microsoft's biggest conferences transition to a completely online format. We won't discuss the fact that this year's conference was **supposed** to be held just 30 minutes from my house and that I was hoping to attend, but I do want to talk a bit about some of this year's announcements in the .NET space that have taken over my brain. There's plenty to be excited about - [new Azure services](https://azure.microsoft.com/en-us/blog/azure-analytics-clarity-in-an-instant/), [production-ready (?) Blazor](https://visualstudiomagazine.com/articles/2020/05/19/blazor-webassembly-3-2.aspx), [.NET Core 4 - err... I mean .NET 5](https://devblogs.microsoft.com/dotnet/announcing-net-5-preview-4-and-our-journey-to-one-net/) - but what has really monopolized my thinking is how functional concepts keep making their way into C#.
 
-I found this in two distinct efforts that were mentioned at this year's Build. The more obvious of the two is the addition of Records and init-only properties in C# 9.0. This, along with some nice improvments to pattern matching, will mean that C# devs will be able to reap some more of the performance and readability benefits of a more Functional approach. The second place, was with the introduction of a technology that is still a year out from its first generally available preview: .NET MAUI (Multi-platform App UI). The idea here is to finally unify the split Xamarin/UWP experience into a single developer experience. Now, this on its own is really cool (**_IOS, ANDROID, AND WINDOWS ALL IN THE SAME PROJECT?!?! GASP_**), but they snuck something in here that again appears to point towards Functional paradigms coming enmasse to C#-land, namely, first class support for MVU (Model-View-Update).
+I found this in two distinct efforts that were mentioned at this year's Build. The more obvious of the two is the [addition of Records and Init-only Properties in C# 9.0](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/). This, along with some nice improvments to pattern matching, will mean that C# devs will be able to reap some more of the performance and readability benefits of a more Functional approach. The second place, was with the introduction of a technology that is still a year out from its first GA version: [.NET MAUI (Multi-platform App UI)](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/). The idea here is to finally unify the split Xamarin/UWP experiences into a single developer experience. Now, this on its own is really cool (**_IOS, ANDROID, AND WINDOWS ALL IN THE SAME PROJECT?!?! GASP_**), but they snuck something in here that again appears to point towards Functional paradigms coming enmasse to C#-land, namely, first class support for MVU (Model-View-Update).
 
 Now C# devs are really familiar with M's and V's - we're all about MVC and MVVM - but I don't think very many of us are familiar with MVU. I've heard it discussed by people who have their toes in the Functional world, but never really dug in. In fact, I've always wanted to be one of those people that has their toes in the Functional world, but I've always given up long before I understood anything in a real sense. So I've convinced myself to give it another try, but this time in the hopes that I might get some insight into the future of mobile development on the .NET platform.
 
@@ -18,18 +18,18 @@ This may be a completely foolish attempt, but I think it has the highest possibi
 
 # Fabulous F\# and Xamarin.Forms
 
-Anyway, I started by doing some googling for MVU frameworks meant to work with Xamarin.Forms and within seconds I had run into [Fabulous for Xamarin.Forms](https://github.com/fsprojects/Fabulous/tree/master/Fabulous.XamarinForms). Looked like everything I needed, including a template project - which was a real plus. I won't bore you with the setup, just know that it was minimal (a couple of dotnet CLI commands) and that it resulted in this:
+Anyway, I started by doing some googling for MVU frameworks meant to work with Xamarin.Forms and within seconds I had run into [Fabulous for Xamarin.Forms](https://github.com/fsprojects/Fabulous/tree/master/Fabulous.XamarinForms). It looked like everything I needed, including a template project - which was a real plus. I won't bore you with the setup, just know that it was minimal (a couple of dotnet CLI commands) and that it resulted in this:
 ![Solution Tree](/assets/posts/mvu-with-xamarin/solution-tree.png)
 
 Thats right folks, three F# projects, no XAML, and no C#.
 
-#### Side Note: Project Name
+> #### Side Note: Project Name
+>
+> You may be questioning why this project name is not "MvuDemo" or "HelleWorldMvu" or something. My plan is to ultimately recreate an app that I wrote a few years ago, which I use for mileage and fuel economy tracking. While its not important to this particular post, I figured I'd let you all in on this little personality tick of mine. When I start a project of any kind, I start with an end goal so large its impossible.
+>
+> There's a good chance _commutrv2_ will never actually happen. When I first started this post, I assumed I would be able to get well beyond explaining the demo app. I quickly realized I needed to break down the demo app just so that I could understand it. So there you have it. When it comes to personal goals, I _always_ over promise and under deliver.
 
-You may be questioning why this project name is not "MvuDemo" or "HelleWorldMvu" or something. The plan is for me to ultimately recreate an app that I wrote a few years ago which I use for mileage and fuel economy tracking. While its not important to this particular post, I figured I'd let you all in on this little personality tick of mine. When I start a project of any kind, I start with an end goal so large its impossible. There's a good chance _commutrv2_ will never actually happen. When I first started this post, I assumed I would be able to get well beyond explaining the demo app. I quickly realized I needed to break down the demo app just so that I could understand it. So there you have it. When it comes to personal goals, I _always_ over promise and under deliver.
-
-Was that a waste of your time? I hope not...
-
-#### ...Now where were we?
+Was that a waste of your time? I hope not ... now where were we?
 
 Oh right, here's the contents of the single F# file generated in the shared project:
 
@@ -150,7 +150,11 @@ This is a pretty complicated example to start with, and it took me a little bit 
 
 ![(Initial Example Screenshot)](/assets/posts/mvu-with-xamarin/initial-example-screenshot.png)
 
-# Breaking it Down
+> #### Side Note: Acknowledging My Own Limits
+>
+> Just as a note, we're going to skip everything from `let program = XamarinFormsProgram.mkProgram init update view` down as this is really just kind of "wiring" that sets up the framework. I included it here as it is part of the file and might be interesting for those who are a little more advanced in their knowledge of F# Xamarin development, but - to be truthfully honest - I don't understand most of it.
+
+# Breaking It Down
 
 Now I know there's a lot of code here and on top of that, there's quite a bit of syntax that looks quite strange if you're not familiar with F#, but there's really three key portions of this app that I think break down quite nicely. I know what you're thinking, "Three you say? You mean the same as the number of letters in the acronym?" And you're right, but you don't have to be so smug about it.
 
