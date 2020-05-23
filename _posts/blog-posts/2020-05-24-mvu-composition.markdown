@@ -45,7 +45,7 @@ module VehicleItem =
             ])
 ```
 
-This is pretty straight forward, so I won't go in too much detail. The plan here is to output a view that can be used as a child of a `CollectionView`. So we have our model which represents a vehicle, the update which can set whether the vehicle in question is primary, and the view which puts it all together. We may come back to this later, as I'm not entirely sure what actions will need to be handled here and what actions will need to be handled elsewhere, but this seems like it handles everything I need for the moment.
+This is pretty straight forward, so I won't go in too much detail. The plan here is to output a view that can be used as a child of a `CollectionView`. So we have our model which represents a vehicle, the update which can set whether the vehicle in question is "Primary", and the view which puts it all together. We may come back to this later, as I'm not entirely sure what actions will need to be handled here and what actions will need to be handled in parent components, but this seems like it handles everything I need for the moment.
 
 Now that we have the smallest piece set up, lets move one step higher.
 
@@ -94,7 +94,7 @@ module VehicleListing =
 
 Now this is clearly a work in progress, but I wanted to map out where I'm heading while simultaneously getting the most simple case working first. There are three novel things that are happening here. The first is that part of the Model for this module is a list of models from the `VehicleItem` module. Model, module, model, module... bleh.
 
-Anyway, the second is in the update. You'll notice the arguments for the `Modified` case are `pos` (an integer representing the position of the requested item in the array) and `itemMessage` which is of type `VehicleItem.Msg`. Those arguments are then used to update the model that matches the correct position using `VehicleItem.update`. So all we're doing is routing the message back to the appropriate update function. And since our `update` functions are pure, we don't need a specific instance of anything, just pass the model and the message and the result will be the updated model.
+Anyway, the second is in `update`. You'll notice the arguments for the `Modified` case are `pos` (an integer representing the position of the requested item in the array - aka its index) and `itemMessage` which is of type `VehicleItem.Msg`. Those arguments are then used to update the model that matches the correct position using `VehicleItem.update`. So all we're doing is routing the message back to the appropriate update function so that the result is a list of updated `VehicleItem.Model`s. And since our `update` functions are pure, we don't need a specific instance of anything, just pass the model and the message and the result will be the updated model.
 
 The last novel thing is in (you guessed it) the view. We get a list of items by mapping the List of `VehicleItem.Model` in our model to a list of Stack Layout Views via the `VehicleItem.view` function. There's something really interesting that we're doing here that makes this work. We're hijacking the `dispatch` function so that the `Modified` message gets sent instead. Its then up to our `Modified` message to update the appropriate item (using `VehicleItem.update` as we previously saw).
 
@@ -286,6 +286,8 @@ You'll notice that selecting one as Primary makes the other not primary (if it a
 
 We are also no longer simply calling `VehicleItem.update` on the item that matches the position we were given. We're also checking if we're setting a new item as Primary and mark any other items that are currently "Primary" to false. This will ensure that only one item is ever marked as Primary at a time.
 
+Before we wrap things up, I want to mention that I _think_ this validates my assumption that we can handle "Selecting" a particular vehicle item within `VehicleListing`. We should be able to call dispatch to send a selection message from a `SwipeItem`.
+
 # Wrapping Up
 
 So I think this is the state I'll leave the app in for the purposes of this article. I think it gives a pretty good idea of how composition in MVU can allow us to break out parts of the UI into smaller units. So I guess the question is, what did we learn from this?
@@ -301,3 +303,5 @@ Another thing I'd like to note is that quite frankly, 3rd party support for F# i
 I do plan to continue working on this project, but I think this will be my last blog on it for a while. I need to spend some more time digging in to F# and MVU so that I can really understand it and find some interesting ways to use it, before I can share any more insights.
 
 In the meantime, go give us some listens and feel free to reach out in the comments below, on Twitter [@usecasepod](twitter.com/usecasepod), or [via email (usecasepod@gmail.com)](mailto:usecasepod@gmail.com).
+
+You can also find the full repository for this app [on our Github](https://github.com/usecasepod/commutr_v2), but keep in mind that this is going to be a living project, so what you see in this post today may not be reflected in the current version of the app.

@@ -256,3 +256,7 @@ That's what excites me about MAUI. If the result is MVU's ability to make code m
 But that's for a another day. 'Til next time!
 
 (If I ever get around to it...)
+
+---
+
+Turns out I did get around to it. Go check out [Exploring MVU Part 2: Composition](/posts/mvu-composition.html).
