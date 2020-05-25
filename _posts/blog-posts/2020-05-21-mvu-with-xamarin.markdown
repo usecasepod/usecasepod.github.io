@@ -249,10 +249,14 @@ In each case, the UI element displays the current state of the Model (where nece
 
 # Final Thoughts
 
-There are plenty of things I don't like about F#. For one, I think that its easy for a language that incourages _less code_ to incourage less readability. At the same time, I recognize that _more verbose_ does not necessarily equal _more readability_, so... to each their own. What I really like about this approach is the same thing I have come to love about functional components in React (which is the only other "functional" environment that I regularly interact with). Because the view can only read the current state and dispatch updates to the state, its very easy to reason about what happens in any given scenario.
+There are plenty of things I don't like about F#. For one, I think that its easy for a language that encourages _less code_ to encourage less readability. At the same time, I recognize that _more verbose_ does not necessarily equal _more readable_, so... to each their own. What I really like about this approach is the same thing I have come to love about functional components in React (which is the only other "functional" environment that I regularly interact with). Because the view can only read the current state and dispatch updates to the state, its very easy to reason about what happens in any given scenario.
 
 That's what excites me about MAUI. If the result is MVU's ability to make code more "reasonable" with the familiarity of C#, I really think I could be sold on it. The beauty of all this is that there are no plans to get rid of XAML or MVVM, so I'll always have that to fall back on, but I think there is really something to be said for the simplicity of MVU. That being said, this is just me scratching the surface. In order to do a full scale app (like Commutr V2), I'll have to figure out how to leverage composition to create smaller, more manageable components that can be combined together to accomplish complicated tasks.
 
-But thats for a another day. 'Til next time!
+But that's for a another day. 'Til next time!
 
 (If I ever get around to it...)
+
+---
+
+Turns out I did get around to it. Go check out [Exploring MVU Part 2: Composition](/posts/mvu-composition.html).
