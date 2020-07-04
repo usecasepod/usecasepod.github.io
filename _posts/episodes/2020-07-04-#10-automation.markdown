@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Ep #10: Automation"
+categories: Episodes
+author: Austin Webre & Clinton Walker
+player_config:
+  id: 10
+  audio_src: https://anchor.fm/s/cb6d710/podcast/play/16115574/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-07-04%2F628b096a23fb60ac3f9b175d1ae4fbef.m4a
+  runtime: "50:44"
+  show_player: true
+git_trendy:
+  austin: https://github.com/Clancey/Comet
+  clinton: https://github.com/vlang/gitly
+---
+
+[Clinton](https://twitter.com/clintonjwalker) and [Austin](https://twitter.com/austinwebre) take a listener's advice and talk about automation and its effects on society and developers. Clinton exstoles the virtues of "putting everything in the cloud."
