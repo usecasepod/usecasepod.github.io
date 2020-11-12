@@ -24,7 +24,7 @@ description: Developers making a podcast about development!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://usecasepod.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: true
-future: false
+future: true
 twitter_username: usecasepod
 github_username: usecasepod
 disqus:
@@ -37,7 +37,6 @@ theme: minima
 plugins:
   - jekyll-feed
 permalink: none
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
