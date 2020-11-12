@@ -24,7 +24,7 @@ description: Developers making a podcast about development!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://usecasepod.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: true
-future: true
+future: false
 twitter_username: usecasepod
 github_username: usecasepod
 disqus:
