@@ -5,9 +5,9 @@ categories: Episodes
 author: Austin Webre & Clinton Walker
 player_config:
   id: 12
-  audio_src: ""
+  audio_src: "https://anchor.fm/s/cb6d710/podcast/play/21587328/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-10-24%2F89158632a6f9894f04194b8ced9dfc09.m4a"
   runtime: "1:00:16"
-  show_player: false
+  show_player: true
 git_trendy:
   austin: https://github.com/migueldeicaza/gui.cs
   clinton: https://github.com/TheCherno/Hazel
