@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Ep #13: M1 Hype!"
+categories: Episodes
+author: Austin Webre & Clinton Walker
+player_config:
+id: 13
+audio_src: ""
+runtime: "1:30:43"
+show_player: false
+git_trendy:
+austin: https://github.com/signalapp/Signal-iOS
+clinton: https://github.com/sonic-pi-net/sonic-pi
+resources:
+  - https://debugger.medium.com/why-is-apples-m1-chip-so-fast-3262b158cba2
+  - https://isapplesiliconready.com/
+  - https://medium.com/disruptive-nerd/how-is-the-apple-m1-going-to-affect-machine-learning-2d9da1beef86
+  - https://www.zdnet.com/article/aws-engineer-puts-windows-10-on-arm-on-apple-mac-m1-and-it-thrashes-surface-pro-x/
+  - https://isapplesiliconready.com
+  - https://semiengineering.com/quantum-effects-at-7-5nm/
+---
+
+[Clinton](https://twitter.com/clintonjwalker) imagines a future Apple release without graphs and [Austin](https://twitter.com/austinwebre) worries his future Mac might burst into flames. It's also a detailed discussion about the architecture of the M1 and how Apple Silicon marks a shift back to Apple's roots.
