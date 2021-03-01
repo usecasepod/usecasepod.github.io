@@ -4,10 +4,10 @@ title: "Ep #13: M1 Hype!"
 categories: Episodes
 author: Austin Webre & Clinton Walker
 player_config:
-id: 13
-audio_src: "https://anchor.fm/s/cb6d710/podcast/play/27491566/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-02-27%2Ff6fc867649830ee0aeaa254998640b81.m4a"
-runtime: "1:30:43"
-show_player: true
+  id: 13
+  audio_src: "https://anchor.fm/s/cb6d710/podcast/play/27491566/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-02-27%2Ff6fc867649830ee0aeaa254998640b81.m4a"
+  runtime: "1:30:43"
+  show_player: true
 git_trendy:
   austin: https://github.com/signalapp/Signal-iOS
   clinton: https://github.com/sonic-pi-net/sonic-pi
