@@ -23,4 +23,4 @@ resources:
   - https://www.hhs.gov/ohrp/regulations-and-policy/decision-charts-2018/index.html
 ---
 
-[Clinton](https://twitter.com/clintonjwalker) and [Austin](https://twitter.com/austinwebre) spend 20 minutes dicussing HHS Human Subject Regulation flow charts. They also discuss the much more interesting story behind how a dispute between Linux maintainers and a research group resulted in an entire university being banned from contributing to the largest open source project in the world.
+[Clinton](https://twitter.com/clintonjwalker) and [Austin](https://twitter.com/austinwebre) spend 20 minutes discussing HHS Human Subject Regulation flow charts. They also discuss the much more interesting story behind how a dispute between Linux maintainers and a research group resulted in an entire university being banned from contributing to the largest open source project in the world.
